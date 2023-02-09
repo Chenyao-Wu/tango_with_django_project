@@ -5,16 +5,17 @@ import django
 django.setup()
 from rango.models import Category, Page
 
-# For an explanation of what is going on here, please refer to the TwD book.
 
 def populate():
     python_pages = [
         {'title': 'Official Python Tutorial',
          'url':'http://docs.python.org/3/tutorial/',
          'views': 114,},
+
         {'title':'How to Think like a Computer Scientist',
          'url':'http://www.greenteapress.com/thinkpython/',
          'views': 53},
+
         {'title':'Learn Python in 10 Minutes',
          'url':'http://www.korokithakis.net/tutorials/python/',
          'views': 20} ]
@@ -23,9 +24,11 @@ def populate():
         {'title':'Official Django Tutorial',
          'url':'https://docs.djangoproject.com/en/2.1/intro/tutorial01/',
          'views': 32},
+
         {'title':'Django Rocks',
          'url':'http://www.djangorocks.com/',
          'views': 12},
+
         {'title':'How to Tango with Django',
          'url':'http://www.tangowithdjango.com/',
          'views': 1258} ]
@@ -34,6 +37,7 @@ def populate():
         {'title':'Bottle',
          'url':'http://bottlepy.org/docs/dev/',
          'views': 54},
+
         {'title':'Flask',
          'url':'http://flask.pocoo.org',
          'views': 64} ]
